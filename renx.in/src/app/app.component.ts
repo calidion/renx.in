@@ -19,14 +19,6 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
-      let config = {
-        apiKey: "AIzaSyBbVwmcpOje7p5lrIeruLsm_rkwZ6vN9yc",
-        authDomain: "renxin-a35b4.firebaseapp.com",
-        databaseURL: "https://renxin-a35b4.firebaseio.com",
-        storageBucket: "renxin-a35b4.appspot.com",
-        messagingSenderId: "547625641349"
-      };
-      firebase.initializeApp(config);
     });
   }
 }
