@@ -1,0 +1,14 @@
+page-result {
+    ion-content {
+        * {
+            text-align: center;
+        }
+        h1,
+        h2 {
+            color: #0F0;
+        }
+        h1.selectable {
+          user-select: all;
+        }
+    }
+}

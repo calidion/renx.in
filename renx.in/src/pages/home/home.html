@@ -1,17 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>任性(renx.in)分享</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>输入你要分享的内容</h2>
+  <ion-card>
+    <ion-card-content>
+      <textarea [(ngModel)]="text"></textarea>
+    </ion-card-content>
+  </ion-card>
+
+  <button ion-button block class="share" (click)="share()" [disabled]="!text" > 
+           <ion-icon name="share"></ion-icon> &nbsp;分享
+</button>
+
 </ion-content>

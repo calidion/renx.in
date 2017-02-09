@@ -2,8 +2,9 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { ResultPage } from '../pages/result/result';
 import { HomePage } from '../pages/home/home';
+import { FetchPage } from '../pages/fetch/fetch';
 import { TabsPage } from '../pages/tabs/tabs';
 import { Firebase } from '../providers/firebase';
 
@@ -11,8 +12,9 @@ import { Firebase } from '../providers/firebase';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
+    ResultPage,
     HomePage,
+    FetchPage,
     TabsPage
   ],
   imports: [
@@ -22,7 +24,8 @@ import { Firebase } from '../providers/firebase';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    ResultPage,
+    FetchPage,
     HomePage,
     TabsPage
   ],
