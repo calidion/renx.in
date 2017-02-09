@@ -16,9 +16,7 @@ export class HomePage {
   }
 
   share() {
-    var navCtrl = this.navCtrl;
     console.log(this.text);
-    console.log('inside share');
     var firebase = this.firebase;
     firebase.putText(this.text)
       .then((value) => {
