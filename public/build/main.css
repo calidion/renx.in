@@ -21282,7 +21282,7 @@ page-about ion-content h1 {
 }
 
 page-fetch h5 {
-  color: #cFc;
+  color: #3474e1;
   text-align: center;
 }
 
@@ -21291,6 +21291,12 @@ page-fetch ion-card-content {
   -moz-user-select: all;
   -ms-user-select: all;
   user-select: all;
+}
+
+page-fetch .note {
+  border-left: 5px #ccc solid;
+  padding-left: 5px;
+  color: #ccc;
 }
 
 page-home textarea {
