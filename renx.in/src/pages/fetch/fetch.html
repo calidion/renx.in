@@ -22,16 +22,12 @@
     <button ion-button block class="share" (click)="fetch()" [disabled]="!code"><ion-icon name="download"></ion-icon>&nbsp;获取</button>
   </div>
   <div *ngIf="fetched">
-    <h5> 你要查看的内容</h5>
+    <h5>分享的内容:</h5>
     <ion-card>
-      <ion-card-header>
-       
-      </ion-card-header>
-
       <ion-card-content>
         {{fetched}}
       </ion-card-content>
-
     </ion-card>
+    <div class="note">点击上面内容获取数据</div>
   </div>
 </ion-content>

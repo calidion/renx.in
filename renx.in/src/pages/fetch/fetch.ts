@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { LoadingController, NavController, NavParams } from 'ionic-angular';
 import { Firebase } from '../../providers/firebase';
 
 /*
@@ -15,7 +15,10 @@ import { Firebase } from '../../providers/firebase';
 export class FetchPage {
   code
   fetched
-  constructor(public navCtrl: NavController, public navParams: NavParams, public firebase: Firebase) { }
+  constructor(public navCtrl: NavController,
+    public loadingCtrl: LoadingController,
+
+    public navParams: NavParams, public firebase: Firebase) { }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FetchPage');
@@ -23,7 +26,13 @@ export class FetchPage {
 
   fetch() {
     try {
+      var loading = this.loadingCtrl.create({
+        content: '正在获取内容...',
+      });
+      loading.present();
       this.firebase.getText(this.code).then(saved => {
+        loading.dismiss();
+
         this.fetched = saved.text;
       });
     } catch (e) {
