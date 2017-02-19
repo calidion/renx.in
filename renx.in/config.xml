@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Renx.in</name>
-    <description>An awesome Ionic/Cordova app.</description>
+<widget id="in.renx.share" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>任性分享</name>
+    <description>一个方便的分享工具,基于https://renx.in网站。</description>
     <author email="calidion@gmail.com" href="http://renx.in/">calidion</author>
     <content src="index.html" />
     <access origin="*" />
