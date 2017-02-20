@@ -10,9 +10,9 @@ page-home {
         h2 {
             text-align: center;
         }
-    }
-    button.share {
-      height: 40px;
-      font-size: 28px;
+        textarea {
+            min-height: 12em;
+            height: 100%;
+        }
     }
 }

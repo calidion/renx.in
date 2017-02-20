@@ -40,4 +40,9 @@ export class FetchPage {
     }
   }
 
+  refresh() {
+    this.fetched = false;
+    this.code = '';
+  }
+
 }

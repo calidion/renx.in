@@ -1,19 +1,18 @@
 <ion-header>
-  <ion-navbar>
+  <ion-toolbar>
+    <ion-buttons start>
+    </ion-buttons>
     <ion-title>任性(renx.in)分享</ion-title>
-  </ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" class="share" (click)="share()" [disabled]="!text"><ion-icon name="share"></ion-icon> &nbsp;分享
+</button>
+    </ion-buttons>
+
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>输入你要分享的内容</h2>
-  <ion-card>
-    <ion-card-content>
-      <textarea [(ngModel)]="text"></textarea>
-    </ion-card-content>
-  </ion-card>
+  <textarea [(ngModel)]="text" placeholder="输入你要分享的内容"></textarea>
 
-  <button ion-button block class="share" (click)="share()" [disabled]="!text" > 
-           <ion-icon name="share"></ion-icon> &nbsp;分享
-</button>
 
 </ion-content>

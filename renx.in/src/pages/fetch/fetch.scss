@@ -1,10 +1,18 @@
 page-fetch {
     h5 {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
         color: #3474e1;
         text-align: center;
     }
-    ion-card-content {
+    pre {
         user-select: all;
+        background-color: #F0F0F0;
+        box-shadow: 1px 1px 1px #ccc;
+        padding: 10px;
+        margin: 0px;
+
     }
     .note {
         border-left: 5px #ccc solid;

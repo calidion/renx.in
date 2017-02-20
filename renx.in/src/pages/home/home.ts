@@ -30,6 +30,7 @@ export class HomePage {
         console.log(value);
         loading.dismiss();
         if (value) {
+          this.text = '';
           this.navCtrl.push(ResultPage, {
             value: value
           });
