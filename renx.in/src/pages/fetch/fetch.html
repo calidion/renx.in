@@ -10,7 +10,7 @@
     </ion-buttons>
     <ion-title>任性(renx.in)获取<span *ngIf="fetched">获取成功</span></ion-title>
     <ion-buttons end>
-      <button ion-button icon-only color="royal" class="refresh" (click)="refresh()" *ngIf="fetched"><ion-icon name="refresh"></ion-icon>重新获取
+      <button ion-button icon-only color="primary" class="refresh" (click)="refresh()" *ngIf="fetched"><ion-icon name="refresh"></ion-icon>重新获取
 </button>
     </ion-buttons>
 
@@ -26,7 +26,7 @@
 
     </ion-list>
 
-    <button ion-button block class="share" (click)="fetch()" [disabled]="!code"><ion-icon name="download"></ion-icon>&nbsp;获取</button>
+    <button ion-button block color="primary" class="share" (click)="fetch()" [disabled]="!code"><ion-icon name="download"></ion-icon>&nbsp;获取</button>
   </div>
   <div *ngIf="fetched" class="fetched">
     <!--<h5>分享的内容:</h5>-->
